@@ -1,19 +1,33 @@
-# mdx-deck Example
+# [lodash-fp-talk](https://lodash-fp-talk.now.sh/)
 
-This directory is a brief example of a [mdx-deck](https://github.com/jxnblk/mdx-deck) presentation that can be deployed to ZEIT Now with zero configuration.
+[![git3moji](https://img.shields.io/badge/git3moji-%E2%9A%A1%EF%B8%8F%F0%9F%90%9B%F0%9F%93%BA%F0%9F%91%AE%F0%9F%94%A4-fffad8.svg?style=flat-square)](https://robinpokorny.github.io/git3moji/)
 
-## How we created this example
+> 🗣 Functional JavaScript with Lodash/FP
 
-To get started with mdx-deck on Now, you can use the [npm init](https://docs.npmjs.com/cli/init) command to initialize the project:
+## Usage
 
-```shell
-$ npm init deck my-presentation
+### Install dependencies
+
+```bash
+yarn
 ```
 
-## Deploying this Example
+### Run dev with hot reloading
 
-Once initialized, you can deploy the mdx-deck example with just a single command:
+```bash
+yarn start
+```
 
-```shell
-$ now
+### Build to `public/`
+
+```bash
+yarn build
+```
+
+### Serve from `public/`
+
+Local URL is copied to clipboard.
+
+```bash
+yarn serve
 ```

@@ -1,14 +1,25 @@
 {
   "private": true,
-  "name": "foo",
+  "name": "lodash-fp-talk",
   "version": "1.0.0",
+  "repository": "git@github.com:robinpokorny/lodash-fp-talk.git",
+  "author": "Robin Pokorny <me@robinpokorny.com>",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "dev": "mdx-deck deck.mdx --port $PORT",
     "build": "mdx-deck build deck.mdx",
-    "help": "mdx-deck"
+    "serve": "serve -s public/",
+    "format": "prettier --write '{,!(dist)/**/}*.{js,json,mdx}'"
   },
   "devDependencies": {
-    "mdx-deck": "^3.0.8"
+    "husky": "3.0.5",
+    "mdx-deck": "^3.0.8",
+    "prettier": "1.18.2",
+    "pretty-quick": "1.11.1",
+    "serve": "11.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
