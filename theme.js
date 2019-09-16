@@ -1,7 +1,22 @@
-export const theme = {
-  // Customize your presentation theme here.
-  //
-  // Read the docs for more info:
-  // https://github.com/jxnblk/mdx-deck/blob/master/docs/theming.md
-  // https://github.com/jxnblk/mdx-deck/blob/master/docs/themes.md
+const blue = "#3492ff";
+const white = "#ffffff";
+const primary = "#303036";
+
+export default {
+  googleFont: "https://fonts.googleapis.com/css?family=Source+Code+Pro",
+  fonts: {
+    body: '"Source Code Pro", monospace',
+    monospace: '"Source Code Pro", monospace'
+  },
+  colors: {
+    text: white,
+    background: blue,
+    primary
+  },
+  styles: {
+    pre: {
+      color: "background",
+      bg: "text"
+    }
+  }
 };
